@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .body{
+            background-color: beige;
+        }
+        header{
+            padding:30px 100px;
+            /* border: 2px solid red; */
+        }
+        .main_section{
+            padding:100px;
+            display: flex;
+            gap: 300px;
+            justify-content: center;
+            align-items: center;
+            height: 780px;
+        }
+        .main_image img{
+            /* width: 100%; */
+            /* border: 2px solid ; */
+        }
+        .main_info{
+            display: flex;
+            flex-direction: column;
+            gap:100px;
+            /* border: 2px solid black; */
+        }
+        .main_info h1{
+            font-size: 80px;
+            font-family: Space Mono;
+        }
+        .main_info p{
+            font-size: 20px;
+            font-family: Space Mono;
+        }
+        button{
+            padding: 15px;
+            align-self: flex-start;
+            background-color: #333;
+            color:white;
+            border: 0;
+            outline: 0;
+        }
+        @media screen and (max-width:576px) {
+            .header{
+                z-index: 1;
+            }
+            header h3{
+                text-align: center;
+            }
+            .main_section{
+                flex-direction: column;
+                gap: 50px;
+            }
+            .main_info{
+                gap: 20px;
+            }
+            .main_image img{
+                height: 450px;
+            }
+            .main_info h1{
+                font-size: 40px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header><h3>404 PAGE NOT FOUND</h3></header>
+    <main class="main_section">
+        <div class="main_image">
+            <img src="./94394-behavior-area-pro-fujiko-doraemon-animation-human.png" alt="">
+        </div>
+        <div class="main_info">
+            <h1>I have a bad news <br>for you</h1>
+            <p>The page you looking for might removed or temporarily unavailable. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quibusdam!</p>
+            <button>BACK TO HOME</button>
+        </div>
+    </main>
+
+</body>
+</html>
